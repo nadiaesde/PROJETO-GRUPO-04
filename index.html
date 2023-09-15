@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu carro limpo a seco</title>
+        <style>
+
+        /* Estilos CSS */
+        h1 {
+            font-size: 24px; /* Tamanho da fonte */
+            font-weight: bold; /* Texto em negrito */
+            text-decoration: underline; /* Texto sublinhado */
+        }
+
+            /* Estilo para o logotipo */
+            .logo {
+                display: inline-block;
+                /*                float: left;  Alinha o logotipo à esquerda */
+            }
+            /* Estilo para o menu principal */
+            .menu {
+                display: inline-block;
+                vertical-align: top; /* Alinha na parte superior da linha */
+        }
+            
+            /* Estilo para os itens do menu principal */
+            .menu ul {
+                list-style: none;
+                padding: 0;
+            }
+            .menu li {
+                display: inline; /* Exibe os itens do menu em linha */
+                margin-right: 20px; /* Espaço entre os itens do menu */
+                position: relative; /* Define a posição relativa para posicionar o submenu */                
+            }
+            /* Estilo para os submenus */
+            .submenu {
+                display: none; /* Inicialmente oculta o submenu */
+                position: absolute; /* Posição absoluta para sobrepor o conteúdo */
+                top: 100%; /* Posiciona o submenu abaixo do item do menu */
+                left: 0;                
+            }
+            /* Mostra o submenu quando o item do menu principal é hover */
+            .menu li:hover .submenu {
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+            <center><h1> LAVAKI - A Lavagem do carro personalizada!</h1></center>
+        <div class="logo">
+            <img src="/Imagens/LAVAKI_3.png" alt="Lavaki" style="max-width: 200px; margin-top: 20px;" />
+        </div>
+    
+        <div class="menu">
+            <ul>
+                <li>
+                    <a href="#">Opções de Serviços</a>
+                    <!-- Submenu para Opções de Serviços -->
+                    <ul class="submenu">
+                        <select id="Opções de Serviços" style="width: 130px;">
+                            <option value="Clique">Escolha Opção</option>
+                            <option value="Lavagem 1">EcoLava</option>
+                            <option value="Lavagem 2">Lava Seco Sustentável</option>
+                            <option value="Lavagem 3">Limplo & Brilhante</option>
+                            <option value="Lavagem 4">Lava Seco Eco Limp</option>
+                            <option value="Lavagem 5">Seco & Reluzente</option>
+                            <option value="Lavagem 6">Lava Rápido a Seco</option>
+                            <option value="Lavagem 7">Lava Carro Ecológico</option>
+                            <option value="Lavagem 8">Limpinho e Seco</option>
+                            <option value="Lavagem 9">Lavagem a Seco Premium</option>
+
+                        </select>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Cadastro de Cliente</a>
+                    <!-- Submenu para Cadastro de Cliente -->
+                    <ul class="submenu">
+                        <select id="cadastro" style="width: 150px;">
+                            <option value="Clique_cadastro">Escolha Opção</option>                            
+                            <option value="incluir">Incluir</option>
+                            <option value="alterar">Alterar</option>
+                            <option value="excluir">Excluir</option>
+                        </select>
+                    </ul>
+                </li>
+                <!-- Adicione mais itens de menu conforme necessário -->
+                <li>    
+                    <a href="#">Cadastro de Cliente um</a>
+                    <!-- Submenu para Cadastro de Cliente -->
+                    <ul class="submenu">
+<!--                         <label for="cadastro">Cadastro de Cliente um:</label>    <optgroup label="Opções de Cadastro">  -->
+                        <select id="cadastro_1" style="width: 150px;">
+                            <option value="incluir">Incluir</option>
+                            <option value="alterar">Alterar</option>
+                            <option value="excluir">Excluir</option>
+                        </select>
+                    </ul>    
+                </li>    
+            </ul>
+        </div>            
+        <!-- Resto do conteúdo da página -->
+    </body>
+    </html>
+
