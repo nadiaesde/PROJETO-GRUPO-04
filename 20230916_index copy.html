@@ -1,10 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seu carro limpo a seco</title>
+        <style>
+
+        /* Estilo para o contêiner */
+        .container {
+            position: relative;
+        }        
+
+        /* Estilos CSS */
+        h1 {
+            font-size: 24px; /* Tamanho da fonte */
+            font-weight: bold; /* Texto em negrito */
+            text-decoration: underline; /* Texto sublinhado */
+        }
+            /* Estilo para o logotipo */
+            .logo {
+                display: inline-block;
+               /* float: left; /* Alinha o logotipo à esquerda */
+            }
+            /* Estilo para o menu principal */
+/*            .menu {
+                display: inline-block;
+                vertical-align: top; /* Alinha na parte superior da linha */
+/*        }*/
+        .menu {
+            position: absolute;
+            top: 25px; /* Ajuste conforme necessário */
+            right: 500px; /* Ajuste conforme necessário */
+/*            background-color: rgba(208, 196, 196, 0.5); */
+            font-size: 25px; /* Tamanho da fonte desejado */
+            padding: 0px;
+            margin-bottom: 10px; /*  10px  Espaço entre os itens do menu suspenso */            
+        }
+            /* Estilo para os itens do menu principal */
+            .menu ul {
+                list-style: none;
+                padding: 0;
+            }
+            .menu li {
+                display: inline; /* Exibe os itens do menu em linha */
+                margin-right: 20px; /* Espaço entre os itens do menu */
+                position: relative; /* Define a posição relativa para posicionar o submenu */                
+            }
+        /* Estilo para os submenus */
+        .submenu {
+            position: absolute;
+            top: 100%; /* Posiciona abaixo do item do menu principal */
+            left: 0;
+            display: none;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+        }
+            /* Mostra o submenu quando o item do menu principal é hover */
+            .menu li:hover .submenu {
+                display: block;
+            }
+        </style>
     </head>
     <body>
         <div class="container"> 
@@ -40,12 +95,14 @@
                             <li>
                                 <a href="#">Sobre Nós</a>
                             </li>
-                                <li>
-                                    <a href="javascript:void(0);" id="mostrarFormularioContato">Contato</a>
-                                </li>                           
+                            <li>
+                                <a href="#">Contato</a>
+                            </li>
                             <li>
                                 <a href="#">Depoimentos</a>
                             </li>
+    
+
                         <li>
                             <a href="#">Cliente Fidelizado</a>
                             <!-- Submenu para Cadastro de Cliente -->
@@ -59,40 +116,21 @@
                             </ul>
                         </li>
                         <!-- Adicione mais itens de menu conforme necessário -->
+                        <li>    
+                            <a href="#">Cadastro de Cliente um</a>
+                            <!-- Submenu para Cadastro de Cliente -->
+                            <ul class="submenu">
+        <!--                         <label for="cadastro">Cadastro de Cliente um:</label>    <optgroup label="Opções de Cadastro">  -->
+                                <select id="cadastro_1" style="width: 150px;">
+                                    <option value="incluir">Incluir</option>
+                                    <option value="alterar">Alterar</option>
+                                    <option value="excluir">Excluir</option>
+                                </select>
+                            </ul>    
+                        </li>    
                     </ul>
                 </div>            
         </div>    <!-- Resto do conteúdo da página -->
-        <div id="formularioContato" style="display: none;">
-            <h2>Formulário de Contato</h2>
-            <form action="processar_formulario.php" method="post">
-                <!-- Campo Nome -->
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required>
-                
-                <!-- Campo Email -->
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <!-- Campo Assunto -->
-                <label for="assunto">Assunto:</label>
-                <input type="text" id="assunto" name="assunto" required>
-                
-                <!-- Campo Telefone com Máscara -->
-                <label for="telefone">Telefone:</label>
-                <input type="text" id="telefone" name="telefone" pattern="\(\d{2}\) \d{4,5}-\d{4}" placeholder="(99) 12345-6789" required>
-                <small>Formato: (99) 12345-6789</small>
-                
-                <!-- Campo Mensagem -->
-                <label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
-        
-                <!-- Outros campos de formulário -->
-        
-                <input type="submit" value="Enviar">
-            </form>
-        </div>
-        
-        <script type="text/javascript" src="meu_javascript.js"></script>
     </body>
     </html>
 
