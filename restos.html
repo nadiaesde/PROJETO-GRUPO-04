@@ -69,32 +69,93 @@
         <div id="formulario-contato">
             <h2>Formulário de Contato</h2>
             <form action="processar_formulario.php" method="post">
-                <div class="linha">
-                    <div class="coluna">
-                        <label for="nome">Nome:</label>
-                        <input type="text" id="nome" name="nome" required>
-                    </div>
-                    <div class="coluna">
-                        <label for="assunto">Assunto:</label>
-                        <input type="text" id="assunto" name="assunto" required>
-                    </div>
-                </div>
-                <div class="linha">
-                    <div class="coluna">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="coluna">
-                        <label for="telefone">Telefone:</label>
-                        <input type="tel" id="telefone" name="telefone" required>
-                    </div>
-                </div>
+                <!-- Campos do formulário aqui -->
+
+                <!-- Campo Nome -->
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                
+                <!-- Campo Email -->
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <!-- Campo Assunto -->
+                <label for="assunto">Assunto:</label>
+                <input type="text" id="assunto" name="assunto" required>
+                
+                <!-- Campo Telefone com Máscara -->
+                <label for="telefone">Telefone:</label>
+                <input type="text" id="telefone" name="telefone" pattern="\(\d{2}\) \d{4,5}-\d{4}" placeholder="(99) 12345-6789" required>
+                <small>Formato: (99) 12345-6789</small>
+                
+                <!-- Campo Mensagem -->
                 <label for="mensagem">Mensagem:</label>
                 <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+        
+                <!-- Outros campos de formulário -->
+        
                 <input type="submit" value="Enviar">
             </form>
         </div>
-    </div> <!-- Resto do conteúdo da página -->
+        
         <script type="text/javascript" src="meu_javascript.js"></script>
-</body>
-</html>
+    </body>
+    </html>
+
+
+
+    /* Estilize o retângulo do formulário */
+#formulario-contato {
+    background-color: #f0f0f0; /* Cor de fundo do retângulo */
+    padding: 20px; /* Espaçamento interno */
+/*    width: 70%; /* 70%; Largura do retângulo, ajuste conforme necessário */
+/*    margin: 0 auto; /* Centralize o retângulo na página */
+    overflow: hidden; /* Limpe os floats */
+}
+
+/* Estilize os rótulos */
+label {
+    display: block; /* Faça com que os rótulos ocupem uma linha inteira */
+    font-weight: bold;
+    margin-bottom: 5px; /* Espaçamento inferior entre rótulos */
+}
+
+/* Estilize os campos de entrada */
+/*input[type="nome"],*/
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 30%; /* Os campos de entrada ocupam toda a largura das colunas */
+    padding: 10px; /* Espaçamento interno nos campos */
+    margin-bottom: 10px; /* Espaçamento inferior entre campos */
+    border: 1px solid #ccc; /* Adicione uma borda aos campos */
+    border-radius: 5px; /* Cantos arredondados nos campos */
+}
+
+/* Crie uma classe para a coluna esquerda */
+ .formulario-esquerda {
+    float: left; /* Alinha à esquerda */
+    width: 50%; /* 50% de largura para ocupar metade do retângulo */
+}
+
+/* Crie uma classe para a coluna direita */
+.formulario-direita {
+    float: right; /* Alinha à direita */
+    width: 50px; /* 50% de largura para ocupar a outra metade do retângulo */
+ }
+
+/* Estilize o botão de envio */
+input[type="submit"] {
+    background-color: #007bff; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    border: none; /* Remova a borda do botão */
+    border-radius: 5px; /* Cantos arredondados do botão */
+    cursor: pointer; /* Altere o cursor ao passar o mouse */
+}
+
+/* Estilize o botão de envio quando o mouse estiver sobre ele */
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Cor de fundo alterada no hover */
+}

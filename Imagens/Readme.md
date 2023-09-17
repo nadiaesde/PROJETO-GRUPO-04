@@ -7,3 +7,6 @@
 20230916 20:33 estou com dificuldade de colocar a logo-marca na esquerda da página e na sequencia o menu suspenso;
 20230916 22:50 vi a necessidade de criar mais dois arquivo um que é Styles.css e outro javascrip;
 20230916 23:54 consegui criar mesmo todo errado o formulário de contato próximo passo é corrigir.
+20230917 09:08 Jacimar - continua errado o form contato e descrubimos que ter vários arquivos css é uma boa pratica de organização;
+20230917 09:49 Jacimar - ao clicar no contato do menu suspenso aparece o formulário de contato;
+20230917 09:50 Jacimar -  
