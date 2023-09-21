@@ -1,5 +1,5 @@
 // Obtém os elementos do DOM
-const formularioContato = document.getElementById("formularioContato");
+const formularioContato = document.getElementById("formulario-contato");
 const mostrarFormularioContato = document.getElementById("mostrarFormularioContato");
 
 // Adiciona um evento de clique ao link "Contato"

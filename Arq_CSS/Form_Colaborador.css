@@ -2,10 +2,13 @@
 #formulario-contato {
     background-color: #f0f0f0; /* Cor de fundo do retângulo */
     padding: 20px; /* Espaçamento interno */
-    width: 40%; /* 70 Largura do retângulo, ajuste conforme necessário */
+    width: 70%; /* 70 Largura do retângulo, ajuste conforme necessário */
     margin: 0 auto; /* Centralize o retângulo na página */
     overflow: hidden; /* Limpe os floats */
+    position: relative; /*  incluido depois */
+    top: 230px; /* posição do topo para baixo incluido depois */
 }
+
 
 /* Estilize as linhas do formulário */
 .linha {
@@ -44,4 +47,21 @@ input[type="submit"]:hover {
     content: "";
     display: table;
     clear: both;
+}
+
+/* Estilize os campos de entrada e textarea */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 90%; /* Defina a largura desejada (100% para ocupar a largura da coluna) */
+    padding: 10px; /* Espaçamento interno nos campos */
+    margin-bottom: 10px; /* Espaçamento inferior entre campos */
+    border: 1px solid #ccc; /* Adicione uma borda aos campos */
+    border-radius: 5px; /* Cantos arredondados nos campos */
+}
+#nome {
+    /* Estilos CSS para o campo com id "nome" */
+    width: 200%;
+    /* Outros estilos aqui */
 }

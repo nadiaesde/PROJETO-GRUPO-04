@@ -9,4 +9,4 @@
 20230916 23:54 consegui criar mesmo todo errado o formulário de contato próximo passo é corrigir.
 20230917 09:08 Jacimar - continua errado o form contato e descrubimos que ter vários arquivos css é uma boa pratica de organização;
 20230917 09:49 Jacimar - ao clicar no contato do menu suspenso aparece o formulário de contato;
-20230917 09:50 Jacimar -  
+20230917 20:00 Jacimar -  conseguimos um formulário mais ou menos.

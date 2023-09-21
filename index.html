@@ -66,9 +66,9 @@
         </div>    <!-- Resto do conteúdo da página -->
 
 
-        <div id="formulario-contato">
+        <div id="formulario-contato" style="display: none;">
             <h2>Formulário de Contato</h2>
-            <form action="processar_formulario.php" method="post">
+            <form action="mailto:jctinelli@hotmail.com" method="post" enctype="text/plain"> <!-- <form action="processar_formulario.php" method="post"> -->
                 <div class="linha">
                     <div class="coluna">
                         <label for="nome">Nome:</label>
@@ -92,9 +92,13 @@
                 <label for="mensagem">Mensagem:</label>
                 <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
                 <input type="submit" value="Enviar">
+
+                <div id="mensagem-enviado" style="display: none;">
+                    <p>Obrigado! Seu formulário foi enviado com sucesso.</p>
+                </div>
             </form>
-        </div>
     </div> <!-- Resto do conteúdo da página -->
-        <script type="text/javascript" src="meu_javascript.js"></script>
+        <script type="text/javascript" src="/Arq_CSS/meu_javascript.js"></script>
+        <script type="text/javascript" src="/Arq_CSS/Envio_contato.js"></script>        
 </body>
 </html>
