@@ -1,0 +1,67 @@
+/* Estilize o retângulo do formulário */
+#formulario-contato {
+    background-color: #f0f0f0; /* Cor de fundo do retângulo */
+    padding: 10px; /* Espaçamento interno */
+    width: 97%; /* 70 Largura do retângulo, ajuste conforme necessário */
+    position:absolute;    /* position: absolute; */
+    margin: 0 auto; /* Centralize o retângulo na página */
+    overflow: hidden; /* Limpe os floats */
+    bottom: 0;
+}
+
+/* Estilize as linhas do formulário */
+.linha {
+    margin-bottom: 20px; /* Espaçamento inferior entre linhas */
+}
+
+/* Estilize as colunas do formulário */
+.coluna {
+    /* float: right; Alinha à esquerda */
+    width: 20%; /* 48% de largura para ocupar metade do retângulo */
+    margin-right: 4%; /* Espaço entre as colunas */
+    display: inline-block;
+}
+
+/* Limpe o float após as colunas */
+.coluna:last-child {
+    margin-right: 0; /* Remova o espaçamento direito da última coluna */
+}
+
+/* Estilize o botão de envio */
+input[type="submit"] {
+    background-color: #007bff; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    border: none; /* Remova a borda do botão */
+    border-radius: 5px; /* Cantos arredondados do botão */
+    cursor: pointer; /* Altere o cursor ao passar o mouse */
+    /* float: right;     */
+}
+
+/* Estilize o botão de envio quando o mouse estiver sobre ele */
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Cor de fundo alterada no hover */
+    
+}
+
+/* Aumente o tamanho dos campos de input */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    font-size: 18px; /* Ajuste o tamanho da fonte conforme necessário */
+    width: 80%; /* Ocupa 100% da largura do contêiner */
+    /* float: right;     */
+}
+textarea {
+    width: 40%;
+}
+/* Limpe o float após as colunas em cada linha */
+.linha::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* **************************************************************************************************** */
+

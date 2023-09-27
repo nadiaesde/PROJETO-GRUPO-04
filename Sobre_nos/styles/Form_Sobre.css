@@ -1,0 +1,31 @@
+.Sobre_img_cabecalho {
+    position: relative; /* Define a posição relativa para o contêiner */
+
+    width: 100%;
+    height: 300px; /* Isso garante que a proporção da imagem seja mantida */
+}
+
+.texto_sobre_img {
+    font-family: Georgia, serif;
+    color: #ef7d19;
+    font-size: 3rem;
+    position: absolute; /* Define a posição absoluta para o texto */
+    top: 1%; /* Move o texto para o centro vertical do contêiner */
+    left: 50%; /* Move o texto para o centro horizontal do contêiner */
+    transform: translate(-50%, -50%); /* Centraliza o texto de forma precisa */
+}
+.lavando_carro,
+.texto_sobre_img_lavando_carro {
+    position: relative;
+    left: 20%;
+}
+
+.texto_sobre_nos{
+    position: relative;
+    left: 42%;
+    margin-top: -14%;
+}
+
+body{
+    display: inline-flexbox;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nós</title>
+    <link rel="stylesheet" type="text/css" href="./styles/Form_Sobre.css"> 
+    <!-- <link rel="stylesheet" type="text/css" href="\Arq_CSS\styles.css"> -->
+    <link rel="stylesheet" type="text/css" href="./styles/Form_Contato.css">
+</head>
+<body>
+    <div class="container"> 
+        <div class="logo_sobre">
+            <img src="./" alt="Eco Clean"  class="Sobre_img_cabecalho">
+            <h1 class="texto_sobre_img">Limpeza Ecológica</h1> 
+        </div>
+        <div class="Sobre_nos_img">
+            <h1 class="texto_sobre_img_lavando_carro">SOBRE NÓS</h1>
+            <img src="/Imagens/Sobre_nos_lavagem-ecologica.png" alt="Lavando Carro" class="lavando_carro">
+            <p class="texto_sobre_nos">
+                Somos uma empresa ecologicamente correta que desde o ano de 2007 atuamos no segmento de <br>
+                Ecolavagem, Higienização e Estética Automotiva. Nossos técnicos são profissionais altamente <br>
+                qualificados que passam por treinamentos constantes. Os produtos e equipamentos que utilizamos <br>
+                são todos da linha profissional, o que há de melhor no mercado mundial (utilizamos produtos e <br>
+                equipamentos nacionais e importados), para que os serviços executados nos veículos superem as <br>
+                expectativas dos nossos clientes.<br><br>
+                Se você tem interesse em saber onde fica o ECO CLEAN mais próximo de você,
+                <a href="http://carwashecologico.com.br/#unidades"><strong>clique aqui.</strong></a><br><br>
+                SOBRE A NOSSA LAVAGEM ECOLÓGICA<br><br>
+                A nossa Ecolavagem, também conhecida como lavagem à seco, biolavagem ou lavagem ecológica <br>
+                é uma técnica de lavagem de veículos que praticamente elimina o uso de água e limpa os carros por <br>
+                meio de produtos biodegradáveis aplicados com equipamentos e materiais específicos, todos da <br>
+                linha profissional. Enquanto o processo de lavagem não ecológica gasta até 500 litros de água por <br>
+                automóvel, a nossa Ecolavagem utiliza apenas 200 ml que é para fazer a diluição dos produtos.<br><br>
+                Apenas 200 ml de água, assim que um carro vai ser lavado por nós do ECO CLEAN!!!
+            </p>
+        </div>
+<footer>
+        <div id="formulario-contato">
+            <h2>Contato</h2>
+            <form action="">            <!-- <form action="processar_formulario.php" method="post"> -->
+                <div class="linha">
+                    <div class="coluna">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+                    <div class="coluna">
+                        <label for="assunto">Assunto:</label>
+                        <input type="text" id="assunto" name="assunto" required>
+                    </div>
+                </div>
+                <div class="linha">
+                    <div class="coluna">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="coluna">
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" id="telefone" name="telefone" pattern="\(\d{2}\) \d{4,5}-\d{4}" placeholder="(99) 12345-6789" required>
+                        <!-- <small>Formato: (99) 12345-6789</small> -->
+                    </div>
+                </div>        
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                <!-- Outros campos de formulário -->
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+        <script type="text/javascript" src="./javascript/meu_javascript.js"></script>
+</footer>        
+</body>
+</html>

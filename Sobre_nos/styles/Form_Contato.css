@@ -1,0 +1,63 @@
+/* Estilize o botão de envio */
+input[type="submit"] {
+    background-color: silver; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    padding: 5px 10px; /* Espaçamento interno menor para diminuir o tamanho */
+    border: none; /* Remova a borda do botão */
+    border-radius: 5px; /* Cantos arredondados do botão */
+    cursor: pointer; /* Altere o cursor ao passar o mouse */
+    font-size: 16px; /* Tamanho da fonte menor para diminuir o tamanho */
+}
+
+/* #formulario-contato small { */
+/* display:inline-flexbox; Cada pequeno texto em uma nova linha */
+/*    margin-top: 5px; /* Reduz a margem superior do pequeno texto para alinhá-lo à esquerda dos campos */
+/*    text-align: left;
+    margin-left: 20px;*/
+/*}*/
+
+#formulario-contato {
+    display: flex;
+    margin-top: 5px;
+    flex-direction: column;
+    align-items: center; /* Centraliza horizontalmente no eixo transversal */
+    text-align: left; /* Centraliza o texto dentro do formulário */
+    margin-left: 20px;
+/*    justify-content:space-between; */
+  } 
+
+.linha {
+    display: flex;
+/*    justify-content: space-between;*/
+    margin-bottom: 5px;
+} 
+
+.coluna input {
+    width: 50%;
+    padding: 1%;
+} 
+
+.coluna {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    flex: 1;
+/*    justify-content: space-between;   */
+    margin-right: 50%;
+    margin-left: 20%;
+    width: 50%; 
+
+}
+
+/* Para aumentar a largura dos labels */
+label {
+    width: 40%; /* Porcentagem da largura total do contêiner */
+}
+
+/* Para aumentar a largura dos campos de entrada */
+#formulario-contato input,
+#formulario-contato textarea {
+    width: 100%; /* Define a largura para 100% para ocupar a largura do contêiner */
+    max-width: 300px; /* Defina um valor máximo para evitar que fiquem muito largos */
+/*    justify-content: space-between;  */
+}

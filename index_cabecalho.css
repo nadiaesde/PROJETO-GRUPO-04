@@ -1,0 +1,48 @@
+/* Estilo para o contêiner */
+.container {
+    position: relative;
+}        
+
+/* Estilos CSS */
+h1 {
+    font-size: 24px; /* Tamanho da fonte */
+    font-weight: bold; /* Texto em negrito */
+    text-decoration: underline; /* Texto sublinhado */
+}
+    /* Estilo para o logotipo */
+/*    .logo {
+        display: inline-block;
+       /* float: left; /* Alinha o logotipo à esquerda */
+ /*   } */
+.menu {
+    position: absolute;
+    top: -10px; /* Ajuste conforme necessário */
+    right: 500px; /* Ajuste conforme necessário */
+/*            background-color: rgba(208, 196, 196, 0.5); */
+    font-size: 20px; /* Tamanho da fonte desejado */
+    padding: 0px;
+    margin-bottom: 10px; /*  10px  Espaço entre os itens do menu suspenso */            
+}
+    /* Estilo para os itens do menu principal */
+    .menu ul {
+        list-style: none;
+        padding: 0;
+    }
+    .menu li {
+        display: inline; /* Exibe os itens do menu em linha */
+        margin-right: 20px; /* Espaço entre os itens do menu */
+        position: relative; /* Define a posição relativa para posicionar o submenu */                
+    }
+/* Estilo para os submenus */
+.submenu {
+    position: absolute;
+    top: 100%; /* Posiciona abaixo do item do menu principal */
+    left: 0;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+    /* Mostra o submenu quando o item do menu principal é hover */
+    .menu li:hover .submenu {
+        display: block;
+    }

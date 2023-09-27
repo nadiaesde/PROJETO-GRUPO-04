@@ -1,0 +1,80 @@
+#formulario-contato {
+    background-color: #f0f0f0;
+    padding: 10px;
+    width: 98%;
+    position: absolute;
+    overflow: hidden;
+    margin: 0;
+    bottom: 0;
+    /* justify-content: center; */
+}
+
+/* Estilize as linhas do formulário */
+.linha {
+    margin-bottom: 20px; /* Espaçamento inferior entre linhas */
+    /* justify-content: space-between; */
+}
+
+/* Estilize as colunas do formulário */
+.coluna {
+    /* float: right; Alinha à esquerda */
+    width: 48%; /* 48% de largura para ocupar metade do retângulo */
+    margin-right: 1%; /* Espaço entre as colunas */
+    display: inline-block;
+    justify-content:space-between; 
+}
+
+/* Limpe o float após as colunas */
+.coluna:last-child {
+    margin-right: 0; /* Remova o espaçamento direito da última coluna */
+}
+/* Estilize o botão de envio */
+input[type="submit"] {
+    background-color: #007bff; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    border: none; /* Remova a borda do botão */
+    border-radius: 5px; /* Cantos arredondados do botão */
+    cursor: pointer; /* Altere o cursor ao passar o mouse */
+    /* float: right;     */
+}
+/* Estilize o botão de envio quando o mouse estiver sobre ele */
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Cor de fundo alterada no hover */
+    
+}
+
+/* Aumente o tamanho dos campos de input */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    font-size: 18px; /* Ajuste o tamanho da fonte conforme necessário */
+    width: 100%; /* Ocupa 100% da largura do contêiner */
+    /* float: right;     */
+    /* justify-content: space-between; */
+}
+textarea {
+    width: 40%;
+}
+/* Limpe o float após as colunas em cada linha */
+.linha::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* **************************************************************************************************** */
+.contato-container {
+    display:flex;
+    flex-direction:row ; /* Alinhe na horizontal */
+    /* justify-content: space-between; Alinhe à direita */
+    justify-content: flex;    /* align-items: flex-start; Alinhe ao topo */
+}
+
+.contato-texto {
+    flex: 1; /* Ocupa o espaço restante à esquerda */
+    padding: 10px;
+    max-width: 50%; /* Limite a largura para evitar sobreposição com o formulário */
+    justify-content:flex;
+}
