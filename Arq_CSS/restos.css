@@ -1,0 +1,135 @@
+/* Estilos para o contêiner */
+.container {
+    position: relative;
+}
+
+/* Estilos para o formulário de contato */
+#formularioContato {
+    display: none;
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+#formularioContato h2 {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.form-coluna {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form-coluna label {
+    display: block;
+    font-weight: bold;
+}
+
+.form-coluna input,
+.form-linha input,
+.form-retangulo textarea {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.form-linha {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-linha .form-coluna {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.form-retangulo {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.form-retangulo label {
+    font-weight: bold;
+}
+
+.form-retangulo textarea {
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    resize: vertical;
+    margin-top: 5px;
+}
+
+/* Outros estilos conforme necessário */
+
+
+
+
+
+
+
+/* Estilize o retângulo do formulário */
+#formulario-contato {
+    background-color: #f0f0f0; /* Cor de fundo do retângulo */
+    padding: 20px; /* Espaçamento interno */
+/*    width: 70%; /* 70%; Largura do retângulo, ajuste conforme necessário */
+/*    margin: 0 auto; /* Centralize o retângulo na página */
+    overflow: hidden; /* Limpe os floats */
+}
+
+/* Estilize os rótulos */
+label {
+    display: block; /* Faça com que os rótulos ocupem uma linha inteira */
+    font-weight: bold;
+    margin-bottom: 5px; /* Espaçamento inferior entre rótulos */
+}
+
+/* Estilize os campos de entrada */
+input[type="nome"],
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 30%; /* Os campos de entrada ocupam toda a largura das colunas */
+    padding: 10px; /* Espaçamento interno nos campos */
+    margin-bottom: 10px; /* Espaçamento inferior entre campos */
+    border: 1px solid #ccc; /* Adicione uma borda aos campos */
+    border-radius: 5px; /* Cantos arredondados nos campos */
+}
+
+/* Crie uma classe para a coluna esquerda */
+ .formulario-esquerda {
+    float: left; /* Alinha à esquerda */
+    width: 50%; /* 50% de largura para ocupar metade do retângulo */
+}
+
+/* Crie uma classe para a coluna direita */
+.formulario-direita {
+    float: right; /* Alinha à direita */
+    width: 50px; /* 50% de largura para ocupar a outra metade do retângulo */
+ }
+
+/* Estilize o botão de envio */
+input[type="submit"] {
+    background-color: #007bff; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    border: none; /* Remova a borda do botão */
+    border-radius: 5px; /* Cantos arredondados do botão */
+    cursor: pointer; /* Altere o cursor ao passar o mouse */
+}
+
+/* Estilize o botão de envio quando o mouse estiver sobre ele */
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Cor de fundo alterada no hover */
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu carro limpo a seco</title>
+        <style>
+
+        /* Estilo para o contêiner */
+        .container {
+            position: relative;
+        }        
+
+        /* Estilos CSS */
+        h1 {
+            font-size: 24px; /* Tamanho da fonte */
+            font-weight: bold; /* Texto em negrito */
+            text-decoration: underline; /* Texto sublinhado */
+        }
+            /* Estilo para o logotipo */
+            .logo {
+                display: inline-block;
+               /* float: left; /* Alinha o logotipo à esquerda */
+            }
+            /* Estilo para o menu principal */
+/*            .menu {
+                display: inline-block;
+                vertical-align: top; /* Alinha na parte superior da linha */
+/*        }*/
+        .menu {
+            position: absolute;
+            top: 25px; /* Ajuste conforme necessário */
+            right: 500px; /* Ajuste conforme necessário */
+/*            background-color: rgba(208, 196, 196, 0.5); */
+            font-size: 25px; /* Tamanho da fonte desejado */
+            padding: 0px;
+            margin-bottom: 10px; /*  10px  Espaço entre os itens do menu suspenso */            
+        }
+            /* Estilo para os itens do menu principal */
+            .menu ul {
+                list-style: none;
+                padding: 0;
+            }
+            .menu li {
+                display: inline; /* Exibe os itens do menu em linha */
+                margin-right: 20px; /* Espaço entre os itens do menu */
+                position: relative; /* Define a posição relativa para posicionar o submenu */                
+            }
+        /* Estilo para os submenus */
+        .submenu {
+            position: absolute;
+            top: 100%; /* Posiciona abaixo do item do menu principal */
+            left: 0;
+            display: none;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+        }
+            /* Mostra o submenu quando o item do menu principal é hover */
+            .menu li:hover .submenu {
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container"> 
+                <div class="logo">
+                    <img src="/Imagens/Eco Clean.png" alt="Eco Clean" style="width: 200px; height:100px;" />
+                </div>
+                <h1 style="text-align: center; font-size: 24px; font-weight: bold; text-decoration: underline; margin-top: 20px;"> Eco Clean - A Lavagem personalizada!</h1>
+            
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <a href="#">Início</a>
+                        </li>
+                        <li>
+                            <a href="#">Serviços</a>
+                            <!-- Submenu para Opções de Serviços -->
+                            <ul class="submenu">
+                                <select id="Opções de Serviços" style="width: 130px;">
+                                    <option value="Clique">Escolha Opção</option>
+                                    <option value="Lavagem 1">EcoLava</option>
+                                    <option value="Lavagem 2">Lava Seco Sustentável</option>
+                                    <option value="Lavagem 3">Limplo & Brilhante</option>
+                                    <option value="Lavagem 4">Lava Seco Eco Limp</option>
+                                    <option value="Lavagem 5">Seco & Reluzente</option>
+                                    <option value="Lavagem 6">Lava Rápido a Seco</option>
+                                    <option value="Lavagem 7">Lava Carro Ecológico</option>
+                                    <option value="Lavagem 8">Limpinho e Seco</option>
+                                    <option value="Lavagem 9">Lavagem a Seco Premium</option>
+
+                                </select>
+                            </ul>
+                        </li>
+                            <li>
+                                <a href="#">Sobre Nós</a>
+                            </li>
+                            <li>
+                                <a href="#">Contato</a>
+                            </li>
+                            <li>
+                                <a href="#">Depoimentos</a>
+                            </li>
+    
+
+                        <li>
+                            <a href="#">Cliente Fidelizado</a>
+                            <!-- Submenu para Cadastro de Cliente -->
+                            <ul class="submenu">
+                                <select id="cadastro" style="width: 150px;">
+                                    <option value="Clique_cadastro">Escolha Opção</option>                            
+                                    <option value="incluir">Incluir</option>
+                                    <option value="alterar">Alterar</option>
+                                    <option value="excluir">Excluir</option>
+                                </select>
+                            </ul>
+                        </li>
+                        <!-- Adicione mais itens de menu conforme necessário -->
+                        <li>    
+                            <a href="#">Cadastro de Cliente um</a>
+                            <!-- Submenu para Cadastro de Cliente -->
+                            <ul class="submenu">
+        <!--                         <label for="cadastro">Cadastro de Cliente um:</label>    <optgroup label="Opções de Cadastro">  -->
+                                <select id="cadastro_1" style="width: 150px;">
+                                    <option value="incluir">Incluir</option>
+                                    <option value="alterar">Alterar</option>
+                                    <option value="excluir">Excluir</option>
+                                </select>
+                            </ul>    
+                        </li>    
+                    </ul>
+                </div>            
+        </div>    <!-- Resto do conteúdo da página -->
+    </body>
+    </html>
+

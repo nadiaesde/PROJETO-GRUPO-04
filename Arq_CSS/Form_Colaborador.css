@@ -1,0 +1,67 @@
+/* Estilize o retângulo do formulário */
+#formulario-contato {
+    background-color: #f0f0f0; /* Cor de fundo do retângulo */
+    padding: 20px; /* Espaçamento interno */
+    width: 70%; /* 70 Largura do retângulo, ajuste conforme necessário */
+    margin: 0 auto; /* Centralize o retângulo na página */
+    overflow: hidden; /* Limpe os floats */
+    position: relative; /*  incluido depois */
+    top: 230px; /* posição do topo para baixo incluido depois */
+}
+
+
+/* Estilize as linhas do formulário */
+.linha {
+    margin-bottom: 50px; /* Espaçamento inferior entre linhas */
+}
+
+/* Estilize as colunas do formulário */
+.coluna {
+    float: left; /* Alinha à esquerda */
+    width: 48%; /* 48% de largura para ocupar metade do retângulo */
+    margin-right: 4%; /* Espaço entre as colunas */
+}
+
+/* Limpe o float após as colunas */
+.coluna:last-child {
+    margin-right: 0; /* Remova o espaçamento direito da última coluna */
+}
+
+/* Estilize o botão de envio */
+input[type="submit"] {
+    background-color: #007bff; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    border: none; /* Remova a borda do botão */
+    border-radius: 5px; /* Cantos arredondados do botão */
+    cursor: pointer; /* Altere o cursor ao passar o mouse */
+}
+
+/* Estilize o botão de envio quando o mouse estiver sobre ele */
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Cor de fundo alterada no hover */
+}
+
+/* Limpe o float após as colunas em cada linha */
+.linha::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Estilize os campos de entrada e textarea */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 90%; /* Defina a largura desejada (100% para ocupar a largura da coluna) */
+    padding: 10px; /* Espaçamento interno nos campos */
+    margin-bottom: 10px; /* Espaçamento inferior entre campos */
+    border: 1px solid #ccc; /* Adicione uma borda aos campos */
+    border-radius: 5px; /* Cantos arredondados nos campos */
+}
+#nome {
+    /* Estilos CSS para o campo com id "nome" */
+    width: 200%;
+    /* Outros estilos aqui */
+}

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="\Arq_CSS\styles.css">
+    <link rel="stylesheet" type="text/css" href="\Arq_CSS\Form_Contato.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu carro limpo a seco</title>
+    </head>
+    <body>
+        <div class="container"> 
+                <div class="logo">
+                    <img src="/Imagens/Eco Clean.png" alt="Eco Clean" style="width: 200px; height:100px;" />
+                </div>
+                <h1 style="text-align: center; font-size: 24px; font-weight: bold; text-decoration: underline; margin-top: 20px;"> Eco Clean - A Lavagem personalizada!</h1>
+            
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <a href="#">Início</a>
+                        </li>
+                        <li>
+                            <a href="#">Serviços</a>
+                            <!-- Submenu para Opções de Serviços -->
+                            <ul class="submenu">
+                                <select id="Opções de Serviços" style="width: 130px;">
+                                    <option value="Clique">Escolha Opção</option>
+                                    <option value="Lavagem 1">EcoLava</option>
+                                    <option value="Lavagem 2">Lava Seco Sustentável</option>
+                                    <option value="Lavagem 3">Limplo & Brilhante</option>
+                                    <option value="Lavagem 4">Lava Seco Eco Limp</option>
+                                    <option value="Lavagem 5">Seco & Reluzente</option>
+                                    <option value="Lavagem 6">Lava Rápido a Seco</option>
+                                    <option value="Lavagem 7">Lava Carro Ecológico</option>
+                                    <option value="Lavagem 8">Limpinho e Seco</option>
+                                    <option value="Lavagem 9">Lavagem a Seco Premium</option>
+
+                                </select>
+                            </ul>
+                        </li>
+                            <li>
+                                <a href="#">Sobre Nós</a>
+                            </li>
+                                <li>
+                                    <a href="javascript:void(0);" id="mostrarFormularioContato">Contato</a>
+                                </li>                           
+                            <li>
+                                <a href="#">Depoimentos</a>
+                            </li>
+                        <li>
+                            <a href="#">Cliente Fidelizado</a>
+                            <!-- Submenu para Cadastro de Cliente -->
+                            <ul class="submenu">
+                                <select id="cadastro" style="width: 150px;">
+                                    <option value="Clique_cadastro">Escolha Opção</option>                            
+                                    <option value="incluir">Incluir</option>
+                                    <option value="alterar">Alterar</option>
+                                    <option value="excluir">Excluir</option>
+                                </select>
+                            </ul>
+                        </li>
+                        <!-- Adicione mais itens de menu conforme necessário -->
+                    </ul>
+                </div>            
+        </div>    <!-- Resto do conteúdo da página -->
+
+
+        <div id="formulario-contato">
+            <h2>Formulário de Contato</h2>
+            <form action="processar_formulario.php" method="post">
+                <!-- Campos do formulário aqui -->
+
+                <!-- Campo Nome -->
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                
+                <!-- Campo Email -->
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <!-- Campo Assunto -->
+                <label for="assunto">Assunto:</label>
+                <input type="text" id="assunto" name="assunto" required>
+                
+                <!-- Campo Telefone com Máscara -->
+                <label for="telefone">Telefone:</label>
+                <input type="text" id="telefone" name="telefone" pattern="\(\d{2}\) \d{4,5}-\d{4}" placeholder="(99) 12345-6789" required>
+                <small>Formato: (99) 12345-6789</small>
+                
+                <!-- Campo Mensagem -->
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+        
+                <!-- Outros campos de formulário -->
+        
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+        
+        <script type="text/javascript" src="meu_javascript.js"></script>
+    </body>
+    </html>
+
+
+
+    /* Estilize o retângulo do formulário */
+#formulario-contato {
+    background-color: #f0f0f0; /* Cor de fundo do retângulo */
+    padding: 20px; /* Espaçamento interno */
+/*    width: 70%; /* 70%; Largura do retângulo, ajuste conforme necessário */
+/*    margin: 0 auto; /* Centralize o retângulo na página */
+    overflow: hidden; /* Limpe os floats */
+}
+
+/* Estilize os rótulos */
+label {
+    display: block; /* Faça com que os rótulos ocupem uma linha inteira */
+    font-weight: bold;
+    margin-bottom: 5px; /* Espaçamento inferior entre rótulos */
+}
+
+/* Estilize os campos de entrada */
+/*input[type="nome"],*/
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 30%; /* Os campos de entrada ocupam toda a largura das colunas */
+    padding: 10px; /* Espaçamento interno nos campos */
+    margin-bottom: 10px; /* Espaçamento inferior entre campos */
+    border: 1px solid #ccc; /* Adicione uma borda aos campos */
+    border-radius: 5px; /* Cantos arredondados nos campos */
+}
+
+/* Crie uma classe para a coluna esquerda */
+ .formulario-esquerda {
+    float: left; /* Alinha à esquerda */
+    width: 50%; /* 50% de largura para ocupar metade do retângulo */
+}
+
+/* Crie uma classe para a coluna direita */
+.formulario-direita {
+    float: right; /* Alinha à direita */
+    width: 50px; /* 50% de largura para ocupar a outra metade do retângulo */
+ }
+
+/* Estilize o botão de envio */
+input[type="submit"] {
+    background-color: #007bff; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    border: none; /* Remova a borda do botão */
+    border-radius: 5px; /* Cantos arredondados do botão */
+    cursor: pointer; /* Altere o cursor ao passar o mouse */
+}
+
+/* Estilize o botão de envio quando o mouse estiver sobre ele */
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Cor de fundo alterada no hover */
+}
