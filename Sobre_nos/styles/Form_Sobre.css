@@ -14,18 +14,35 @@
     left: 50%; /* Move o texto para o centro horizontal do contêiner */
     transform: translate(-50%, -50%); /* Centraliza o texto de forma precisa */
 }
-.lavando_carro,
+/* .lavando_carro, */
 .texto_sobre_img_lavando_carro {
     position: relative;
     left: 20%;
 }
 
-.texto_sobre_nos{
-    position: relative;
-    left: 42%;
+/* .texto_sobre_nos { 
+    display:block;
+    position:absolute;
     margin-top: -14%;
+} */
+/* .Sobre_nos_img { */
+
+    /* display: inline-block; */
+    /* justify-content: center; */
+/* } */
+
+/* ************************************************************************************************ */
+.Sobre_nos_img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-body{
-    display: inline-flexbox;
+.lavando_carro {
+    max-width: 50%; /* Ajuste a largura da imagem ao seu gosto */
+    margin-right: 20px; /* Espaço entre a imagem e o texto */
+}
+
+.texto_sobre_nos {
+    max-width: 50%; /* Ajuste a largura do texto ao seu gosto */
 }

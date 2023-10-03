@@ -1,0 +1,59 @@
+ .book-gallery { */
+    overflow: hidden; /* Limpa o fluxo e previne comportamentos inesperados */
+}
+
+.logo {
+    width: 333%;
+    /* float: left; Faz com que as capas fiquem lado a lado */
+    /* width: calc(33.33% - 20px); Cada capa ocupa um terço da largura disponível */
+    /* margin: 10px; Espaço entre as capas 10px */
+    text-align: top; /* Centraliza o conteúdo horizontalmente */
+}
+body {
+    background-image: url('./imagens/Sobre_EcoClean.jpg"-de-fundo.jpg');
+    background-size: cover;
+    background-position: top left;
+    margin: 0;
+    padding: 0;
+    position: relative; /* Define o elemento pai com position: relative */
+}
+
+.logo1 {
+    display: inline-block;
+    width: 300%;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    position: absolute; /* Define .logo1 com position: absolute */
+}
+
+ .book-item { 
+    /* float: left; */
+    /* width: calc(33.33% - 20px); */
+    /* margin: 10px; */
+    /* text-align: center; */
+    /* position: relative; */
+}
+
+.logo img {
+    max-width: 30%;
+    height: auto;
+}
+
+
+/* ********************************************************************************************************************************************** */
+.Sobre_nos_img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lavando_carro {
+    max-width: 50%; /* Ajuste a largura da imagem ao seu gosto */
+    margin-right: 20px; /* Espaço entre a imagem e o texto */
+}
+
+.texto_sobre_nos {
+    max-width: 50%; /* Ajuste a largura do texto ao seu gosto */
+}

@@ -1,18 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" type="text/css" href="./styles/sobre_cabecalho.css">
+    <link rel="stylesheet" type="text/css" href="./styles/sobre_rodape_contato.css">
+    <link rel="stylesheet" type="text/css" href="./styles/sobre_imagem_cabecalho.css">
+    <link rel="stylesheet" type="text/css" href="/Arq_CSS/Form_Colaborador.css">
+    <link rel="stylesheet" type="text/css" href="/Trabalhe_conosco/Trabalhe_conosco.css">    
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre Nós</title>
-    <link rel="stylesheet" type="text/css" href="./styles/Form_Sobre.css"> 
-    <!-- <link rel="stylesheet" type="text/css" href="\Arq_CSS\styles.css"> -->
-    <link rel="stylesheet" type="text/css" href="./styles/Form_Contato.css">
-</head>
-<body>
-    <div class="container"> 
+ </head>
+ <body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="./imagens/Sobre_EcoClean.jpg" alt="Eco Clean" style="width: 200%; height:300px;" />
+            </div>
+            <!-- <div class="logo1"> -->
+                <!-- <img src="./imagens/1.png" alt="Eco Clean 1" style="width: 2%; height: 90px;"/> -->
+            <!-- </div> -->
+        </div>
+
+            <div class="logo1">
+                <img src="./imagens/1.png" alt="Eco Clean 1" style="width: 2%; height: 90px;"/>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="#">HOME</a>
+                    </li>
+
+                    <li>
+                        <a href="#">SOBRE</a>
+                    </li>
+
+                    <li>
+                        <a href="#">NOSSOS SERVIÇOS</a>
+                    </li>
+
+                    <li>
+                        <a href="#">CONTATO</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" id="mostrarFormularioColaborador">TRABALHE CONOSCO</a>
+                    </li>                           
+                    <!-- ******************************************************************************************************************************************** -->
+                    <div id="formulario-colaborador" style="display: none;">
+                        <h2>Trabalhe Conosco</h2>
+                        <form action='mailto:' + email + method="post" enctype="text/plain"> <!-- <form action="processar_formulario.php" method="post"> -->
+                            <div class="linha">
+                                <div class="coluna">
+                                    <label for="nome">Nome completo:</label>
+                                    <input type="text" id="nome" name="nome" required>
+                                </div>
+                            </div>
+                            <div class="linha">
+                                <div class="coluna">
+                                    <label for="email">Email:</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                <div class="coluna">
+                                    <label for="telefone">Telefone:</label>
+                                    <input type="telefone" id="telefone" name="telefone" required>
+                                </div>
+                            </div>
+                            <label for="arquivo">Selecionar Arquivo:</label>
+                            <input type="file" id="arquivo" name="arquivo" accept=".pdf, .doc, .docx" required><br><br>
+                            <input type="submit" value="Enviar">
+                
+                            <div id="mensagem-enviado" style="display: none;">
+                                <p>Obrigado! Seu formulário foi enviado com sucesso.</p>
+                            </div>
+                        </form>
+                    </div> <!-- Resto do conteúdo da página -->
+                    <!-- *************************************************************************************************************************************************** -->
+                </ul>
+            </div>            
+        </div>    <!-- Resto do conteúdo da página -->
+    </header>    
+<main>
+    <!-- <div class="container">  -->
         <div class="logo_sobre">
-            <img src="./" alt="Eco Clean"  class="Sobre_img_cabecalho">
-            <h1 class="texto_sobre_img">Limpeza Ecológica</h1> 
+            <!-- <img src="./" alt="Eco Clean"  class="Sobre_img_cabecalho"> -->
+            <h1 class="texto_sobre_img">O Eco Clean Ecológica</h1>
+            <h2 class="texto_depois"><br><br>conheça mais um pouco de nós.</h2>
+
         </div>
         <div class="Sobre_nos_img">
             <h1 class="texto_sobre_img_lavando_carro">SOBRE NÓS</h1>
@@ -35,39 +109,65 @@
                 Apenas 200 ml de água, assim que um carro vai ser lavado por nós do ECO CLEAN!!!
             </p>
         </div>
+        
+
+    <!-- Conteúdo principal da página, como textos, imagens, vídeos, etc. -->
+</main>
+
 <footer>
         <div id="formulario-contato">
-            <h2>Contato</h2>
-            <form action="">            <!-- <form action="processar_formulario.php" method="post"> -->
-                <div class="linha">
-                    <div class="coluna">
-                        <label for="nome">Nome:</label>
-                        <input type="text" id="nome" name="nome" required>
-                    </div>
-                    <div class="coluna">
-                        <label for="assunto">Assunto:</label>
-                        <input type="text" id="assunto" name="assunto" required>
-                    </div>
-                </div>
-                <div class="linha">
-                    <div class="coluna">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="coluna">
-                        <label for="telefone">Telefone:</label>
-                        <input type="tel" id="telefone" name="telefone" pattern="\(\d{2}\) \d{4,5}-\d{4}" placeholder="(99) 12345-6789" required>
-                        <!-- <small>Formato: (99) 12345-6789</small> -->
-                    </div>
-                </div>        
+            <h2 class="contato">CONTATO</h2>
+        <div class="contato-container">
+            <div class="contato-texto">
+            <!-- <form action="mailto:jctinelli@hotmail.com" method="post" enctype="text/plain"> -->
 
+                <p>
+                    <b>Horário:</b> <br>
+                    De segunda-feira á sábado das 10:00 ás 21:00h. Aos domingos abre 12h e encerra ás 20:00h.
+                </p>
+                <p>
+                    <b>Telefones:</b> <br>
+                    <b>Loja</b> - Shopping Rio Mar Fortaleza <br> (85) 99773-8791 | (85) 3111-4049 <br/>
+                    <b>Loja 03</b> - Aeroporto de Fortaleza <br/> (85) 99706-3359
+                </p>
+                <p>
+                    <b>E-mail:</b> <br>
+                contato@carwashecologico.com.br
+                </p>
+            </div>
+        <form action="mailto:jctinelli@hotmail.com" method="post" enctype="text/plain">
+            <div class="linha">
+                <div class="coluna">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div class="coluna">
+                    <label for="assunto">Assunto:</label>
+                    <input type="text" id="assunto" name="assunto" required>
+                </div>
+            </div>
+            <div class="linha">
+                <div class="coluna">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="coluna">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" required>
+                </div>
+            </div>
                 <label for="mensagem">Mensagem:</label>
                 <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
-                <!-- Outros campos de formulário -->
                 <input type="submit" value="Enviar">
-            </form>
+            <div id="mensagem-enviada" style="display: none;">
+                <p>Obrigado! Seu formulário foi enviado com sucesso.</p>
+            </div>
+        </form>
+        </div>    
         </div>
-        <script type="text/javascript" src="./javascript/meu_javascript.js"></script>
-</footer>        
+    </div> <!-- Resto do conteúdo da página -->
+</footer>
+    <SCript type="text/javascript" src="/Trabalhe_conosco/meu_javascript.js"
+    ></SCript>
 </body>
 </html>
