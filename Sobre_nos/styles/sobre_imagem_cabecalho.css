@@ -9,6 +9,7 @@
     /* margin: 10px; Espaço entre as capas 10px */
     text-align: top; /* Centraliza o conteúdo horizontalmente */
 }
+
 body {
     background-image: url('./imagens/Sobre_EcoClean.jpg"-de-fundo.jpg');
     background-size: cover;
@@ -40,8 +41,6 @@ body {
     max-width: 30%;
     height: auto;
 }
-
-
 /* ********************************************************************************************************************************************** */
 .Sobre_nos_img {
     display: flex;

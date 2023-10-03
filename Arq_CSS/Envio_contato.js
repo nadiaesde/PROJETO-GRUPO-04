@@ -6,7 +6,7 @@ const mensagemConfirmacao = document.getElementById("mensagem-confirmacao");
 formulario.addEventListener("submit", function (event) {
   // Impede o envio padrão do formulário
   event.preventDefault();
-
+//aqui alteramos o js
   // Aqui você pode adicionar lógica para enviar o formulário por e-mail (se necessário).
 
   // Mostra a mensagem de confirmação

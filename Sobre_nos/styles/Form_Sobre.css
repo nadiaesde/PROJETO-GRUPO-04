@@ -20,17 +20,6 @@
     left: 20%;
 }
 
-/* .texto_sobre_nos { 
-    display:block;
-    position:absolute;
-    margin-top: -14%;
-} */
-/* .Sobre_nos_img { */
-
-    /* display: inline-block; */
-    /* justify-content: center; */
-/* } */
-
 /* ************************************************************************************************ */
 .Sobre_nos_img {
     display: flex;

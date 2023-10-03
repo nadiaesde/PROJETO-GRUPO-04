@@ -30,6 +30,7 @@ h1 {
     margin-bottom: 10px; /*  10px  Espaço entre os itens do menu suspenso */    
 }
     /* Estilo para os itens do menu principal */
+
     .menu ul {
         list-style: none;
         padding: 0;

@@ -11,3 +11,6 @@ mostrarFormularioContato.addEventListener("click", function () {
         formularioContato.style.display = "none";
     }
 });
+
+
+//  aqui também foi alterado

@@ -9,13 +9,6 @@ input[type="submit"] {
     font-size: 16px; /* Tamanho da fonte menor para diminuir o tamanho */
 }
 
-/* #formulario-contato small { */
-/* display:inline-flexbox; Cada pequeno texto em uma nova linha */
-/*    margin-top: 5px; /* Reduz a margem superior do pequeno texto para alinhá-lo à esquerda dos campos */
-/*    text-align: left;
-    margin-left: 20px;*/
-/*}*/
-
 #formulario-contato {
     display: flex;
     margin-top: 5px;

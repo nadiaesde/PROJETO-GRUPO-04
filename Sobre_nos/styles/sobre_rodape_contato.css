@@ -45,20 +45,14 @@ input[type="submit"]:hover {
 }
 
 /* Aumente o tamanho dos campos de input */
-/* input[type="nome"], */
 input[type="text"],
 input[type="email"],
 input[type="tel"],
 textarea {
     font-size: 18px; /* Ajuste o tamanho da fonte conforme necessário */
     width: 100%; /* Ocupa 100% da largura do contêiner */
-    /* float: right;     */
-    /* justify-content: space-between; */
 }
-/* textarea { */
-    /* width: 40%; */
-/* } */
-/* Limpe o float após as colunas em cada linha */
+
 .linha::after {
     content: "";
     display: table;
